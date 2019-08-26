@@ -1,133 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>功能详情-网上书店</title>
-<meta charset="utf-8">
-<!--全局CSS-->
-<link rel="stylesheet" type="text/css" href="/bookshop/css/admin/share/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/bookshop/css/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bookshop/css/admin/share/myStyle.css">
+	<!DOCTYPE html>
+<html lang="zh-cn">
 
-</head>
-<body>
-    <!-- 页面顶部导航条 -->
-	<div class="row panel titlePanel">
-		<div class="col-md-12">
-			<div class="col-md-3">
-				<h3>
-					<i class="fa fa-dashboard"></i> 功能
-				</h3>
-			</div>
-			<div class="col-md-6">
-				<div style="text-align: center;"></div>
-			</div>
-			<div class="col-md-3">
-				<ul class="functionTip app-breadcrumb breadcrumb">
-					<li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-					<li class="breadcrumb-item"><a href="">功能 / 详情</a></li>
-				</ul>
-			</div>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../css/admin.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/pintuer.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/pintuer.js"></script>
+	</head>
+
+	<body>
+		<div class="panel admin-panel">
+			<div class="panel-head"><strong class="icon-reorder"> 系部管理</strong></div>
+			<div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 功能基本信息</strong></div>	
+			<table class="table table-hover text-left">
+				<tr>
+					<th width="33%">名称</th>
+					<th width="33%">URI</th>
+					<th width="33%">说明</th>
+
+				</tr>
+
+				<tr>
+					<td>系部管理功能</td>
+					<td>functions/DepartmentDetail.html</td>
+					<td>对系部信息进行操作</td>
+				</tr>
+
+			</table>
 		</div>
-	</div>
-    <!-- 页面内容体 -->
-    
-	<div class="row">
-		<div class="col-md-12">
-			<div class="panel-group" id="accordion">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title" style="text-align:left;">
-							<i class="fa fa-hand-o-right" aria-hidden="true"></i>基本信息
-						</h4>
-					</div>
-					<div class="panel-body">
-					    <div class="row">
-					    	
-							<div class="form-group col-md-6 form-inline">
-								<div class="col-md-3" style="text-align: right;"><label class="control-label-required">名称：</label></div>
-								<div class="col-md-9" style="text-align: left;"><label class="control-label-norequired">系部</label></div>
-							 </div>
-							 
-							 <div class="form-group col-md-6 form-inline">
-							 	<div class="col-md-3" style="text-align: right;"><label class="control-label-required">URI：</label></div>
-							 	<div class="col-md-9" style="text-align: left;"><label class="control-label-norequired">/Admin/Order/List</label></div>
-							  </div>
-							  
-							  <div class="form-group col-md-6 form-inline">
-							  	<div class="col-md-3" style="text-align: right;"><label class="control-label-required">说明：</label></div>
-							  	<div class="col-md-9" style="text-align: left;"><label class="control-label-norequired">对系部信息进行操作</label></div>
-							   </div>
-					    	    	
-					    	  
-					    </div>
-					    
-						
-					</div>
-				</div>
 
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title" style="text-align:left;">
-							<a data-toggle="collapse" data-parent="" 
-							   href="#collapseCourses">
-								<i class="fa fa-hand-o-right" aria-hidden="true"></i>能用此功能的角色
-							</a>
-						</h4>
-					</div>
-					<div id="collapseCourses" class="panel-collapse collapse in">
-						<div class="panel-body">
-							<table class="table table-hover table-bordered table-striped" id="dataTable">
-							  <thead>
-							    <tr>
-							      <th width="120">名称</th>
-							      <th width="133">职责</th>
-							    </tr>
-							  </thead>
-							  
-							  <tbody>
-							    <tr>
-							      <td>超级管理员</td>
-							      <td>可对系部信息进行查看和更新</td>
-							    </tr>
-                                <tr>
-							      <td>系部主任</td>
-							      <td>可以查看系部信息</td>
-							    </tr>
-							   
-							  </tbody>
-							</table>
-						</div>
-						
-					</div>
-				</div>
-				
-				
-				
-				
-				
-				<div class="panel panel-default">
-					<div class="panel-footer">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-primary" onclick="navTo('/bookshop/pages/admin/functions/list.html')"><i class="fa fa-fw fa-lg fa-times-circle"></i>返回</button>
-					  </div>
-				    </div>
-				</div>
+		<div class="panel admin-panel margin-top" id="add">
+			<div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 能运用此功能的角色</strong></div>
+			<div class="body-content">
+				<form method="post" class="form-x" action="">
+					<table class="table table-hover text-left">
+						<tr>
+							<th width="33%">名称</th>
+							<th width="33%">职责</th>
+						</tr>
+						<tr>
+							<td>超级管理员</td>
+							<td>可对所有信息进行查看和更新</td>
+						</tr>
+						<tr>
+							<td>系部主任</td>
+							<td>可对所有信息进行查看</td>
+						</tr>
+						<!--<tr>
+      <td>教师</td>     
+      <td>可对所有信息进行查看</td>     
+  </tr>
+  <tr>
+      <td>学生</td>     
+      <td>可对所有信息进行查看</td>     
+  </tr>-->
+					</table>
+
+					
 			</div>
-			
+			</form>
 		</div>
-	</div>
+		<a href="../Functionlist.html"><button class="button bg-main icon-check-square-o" type="submit"> 返回</button></a>
+		</div>
+	</body>
 
-	
-	
-	<!--全局JS -->
-	<script src="/bookshop/js/admin/share/jquery-3.2.1.min.js"></script>
-	<script src="/bookshop/js/admin/share/bootstrap.min.js"></script> 
-	<script src="/bookshop/js/admin/share/share.js"></script>
-		
-	
-	<script type="text/javascript">
-	
-	    
-	  
-	</script>
-</body>
+</html>

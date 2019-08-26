@@ -15,7 +15,7 @@
 
 	<body>
 		<div class="panel admin-panel">
-			<div class="panel-head"><strong class="icon-reorder"> 教师管理</strong></div>
+			<div class="panel-head"><strong class="icon-reorder"> 专业管理</strong></div>
 			<div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 功能基本信息</strong></div>
 			<table class="table table-hover text-left">
 				<tr>
@@ -26,9 +26,9 @@
 				</tr>
 
 				<tr>
-					<td>教师管理功能</td>
-					<td>functions/TeacherDetail.html</td>
-					<td>对教师信息进行操作</td>
+					<td>专业管理功能</td>
+					<td>functions/MajorPredom.html</td>
+					<td>对专业信息进行操作</td>
 				</tr>
 
 			</table>
@@ -39,32 +39,42 @@
 			<div class="body-content">
 				<form method="post" class="form-x" action="">
 					<table class="table table-hover text-left">
-						<tr>
-							<th width="33%">名称</th>
-							<th width="33%">职责</th>
-						</tr>
-						<tr>
-							<td>超级管理员</td>
-							<td>可对所有信息进行查看和更新</td>
-						</tr>
-						<tr>
-							<td>系部主任</td>
-							<td>可对所有信息进行查看</td>
-						</tr>
-						<!--<tr>
-      <td>教师</td>     
-      <td>可对所有信息进行查看</td>     
-  </tr>
-  <tr>
-      <td>学生</td>     
-      <td>可对所有信息进行查看</td>     
-  </tr>-->
-					</table>
+						<thead>
+							<tr>
+								<th>选择</th>
+								<th>名称</th>
+								<th>职责</th>
+							</tr>
+						</thead>
 
+						<tbody>
+							<tr>
+								<td><input type="checkbox" value=""></td>
+								<td>超级管理员</td>
+								<td>可对所有信息进行查看和更新</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" value=""></td>
+								<td>系部主任</td>
+								<td>可对所有信息进行查看</td>
+							</tr>
+							<!--<tr>
+			                  	<td><input type="checkbox" value=""></td>
+			                    <td>教师</td>
+			                    <td>可对课程信息进行查看</td>
+			                  </tr>-->
+
+						</tbody>
+					</table>
 			</div>
-			</form>
+
 		</div>
-		<a href="../Functionlist.html"><button class="button bg-main icon-check-square-o" type="submit"> 返回</button></a>
+		</form>
+		</div>
+		</div>
+		<div class="field">
+			<a href="../Functionlist.html"><button class="button bg-main icon-check-square-o" type="submit"> 返回</button></a>
+			<button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
 		</div>
 	</body>
 
